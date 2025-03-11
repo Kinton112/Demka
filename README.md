@@ -54,7 +54,7 @@ iptables –t nat –A POSTROUTING –s 172.16.4.0/28 –o ens192 –j MASQUERAD
 iptables –t nat –A POSTROUTING –s 172.16.5.0/28 –o ens192 –j MASQUERADE  
 iptables-save > /etc/iptables/rules.v4  
 ```
-Айпишник это подсеть куда идёт nat ens192 это порт с интернетом  
+Айпишник это подсеть куда идёт nat, ens192 это порт с интернетом  
 
 Далее проверяем вышло ли настроить:  
 `iptables –L –t nat` 
