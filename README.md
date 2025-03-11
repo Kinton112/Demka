@@ -17,7 +17,7 @@
 <b>Настройка имени</b>  
 Для начало нужно поменять именна на машинах
 <div style="text-align: center;">
-  hostnamectl set-hostname Имя устройства
+  `к34253425`hostnamectl set-hostname Имя устройства
 </div>
 
 ## Установка
