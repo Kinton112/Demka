@@ -19,9 +19,9 @@
 `hostnamectl set-hostname Имя устройства`  
 <b>Настройка портов</b>  
 Далее нам нужно настроить порты на каждом устройстве пример настройки  
-`auto ens224
-iface ens224 inet static
-address 172.16.4.1
+`auto ens224  
+iface ens224 inet static  
+address 172.16.4.1  
 netmask 255.255.255.240`
 
 ## Установка
