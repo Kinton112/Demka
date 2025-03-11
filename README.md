@@ -40,8 +40,7 @@ netmask 255.255.255.240
 проверку пакетов через cdrom зайдя по пути:  
 `Nano /etc/apt/sources.list`  
 
-На HQ-RTR и BR-RTR Нужно зайти в файл `/etc/resolv.conf` и оставить там  
-только одну строку: `nameserver 1.1.1.1`
+На HQ-RTR и BR-RTR Нужно зайти в файл `/etc/resolv.conf` и оставить там только одну строку: `nameserver 1.1.1.1`
 
 Везде нужно зайти в файл `/etc/sysctl.conf` и  
 раскомментировать строку `net.ipv4.ip_forward=1`
