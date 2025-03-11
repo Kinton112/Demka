@@ -1,32 +1,7 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя Красивая Страница</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Добро пожаловать на мою страницу!</h1>
-        <p>Это пример простой страницы на GitHub Pages.</p>
-    </header>
-    <main>
-        <section>
-            <h2>Обо мне</h2>
-            <p>Я - разработчик, увлеченный созданием веб-приложений.</p>
-        </section>
-        <section>
-            <h2>Мои проекты</h2>
-            <ul>
-                <li><a href="#">Проект 1</a></li>
-                <li><a href="#">Проект 2</a></li>
-                <li><a href="#">Проект 3</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>© 2023 Мое Имя</p>
-    </footer>
-</body>
-</html>
+
+123
+123
+123
+123
+123
+213
