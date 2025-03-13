@@ -28,7 +28,7 @@ iface ens224 inet static
 address 172.16.4.1  
 netmask 255.255.255.240
 ```  
-Ещё есть строка `gateway 172.16.4.1` Пишем там где нужен gateway  
+Ещё есть строка `gateway айпи` Пишем там где нужен gateway  
   
 Дополнение:
   
@@ -76,9 +76,36 @@ modprobe 8021q
 echo 8021q >> /etc/modules  
 ```
 Теперь переходим в настройку интерфейсов пример указан ниже:  
+```
+auto ens192  
+iface ens192 inet static  
+address 172.16.4.2  
+netmask 255.255.255.240  
+gateway 172.16.4.1  
+  
+auto ens224  
+iface ens224 inet static  
+address 192.168.100.1  
+netmask 255.255.255.192  
+  
+auto ens224:1  
+iface ens224 inet static  
+address 192.168.200.1  
+netmask 255.255.255.240  
 
-
-
+auto ens224.100  
+iface ens224 inet static  
+address 192.168.100.3  
+netmask 255.255.255.192  
+Vlan-raw-device ens224  
+  
+auto ens224:1.200  
+iface ens224 inet static  
+address 192.168.200.3  
+netmask 255.255.255.240  
+Vlan-raw-device ens224:1
+```
+  
 ## Доп_инф
 <details>
 <summary>🎭 Таблица Масок</summary>
