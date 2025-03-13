@@ -106,6 +106,11 @@ netmask 255.255.255.240
 Vlan-raw-device ens224:1
 ```
   
+<b>iptables</b>  
+`iptables –t nat –A POSTROUTING –s 192.168.100.0/26 –o ens192 –j MASQUERADE`  
+
+
+
 ## Доп_инф
 <details>
 <summary>🎭 Таблица Масок</summary>
