@@ -80,4 +80,10 @@ echo 8021q >> /etc/modules
 
 
 ## Доп.инф
+<details>
+<summary>Таблица Масок</summary>
+
 ![Логотип проекта](Безымянный.png)
+
+</details>  
+
