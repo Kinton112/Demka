@@ -120,8 +120,23 @@ Vlan-raw-device ens224:1
   
 Так же возможно понадобится выдать Root права для данных клиентов это можно выполнить 
 посредством команды `visudo`  
-![user_root](user_root.png)
-
+![user_root](user_root.png)  
+  
+<b>Реализация GRE-туннеля между офисами</b>  
+  
+Нужно зайти в файл /etc/modules и добавить там строку ip_gre  
+Вся последующая настройка проводится в файле /etc/network/interfaces    
+```
+auto tun1  
+iface tun1 inet tunnel  
+address 10.10.0.1  
+netmask 255.255.255.252  
+mode gre  
+local 172.16.4.2  
+endpoint 172.16.5.2  
+ttl 64
+```  
+  
 ## HQ-SRV  
 
 <b>Создание пользователей</b>  
@@ -176,6 +191,22 @@ Vlan-raw-device ens224:1
 **Banner /etc/ssh-banner** – Наш баннер  
   
 Теперь нам нужно созать наш банер по пути который мы указали выше  
+
+<b>Реализация GRE-туннеля между офисами</b>  
+  
+Нужно зайти в файл /etc/modules и добавить там строку ip_gre  
+Вся последующая настройка проводится в файле /etc/network/interfaces    
+```
+auto tun1  
+iface tun1 inet tunnel  
+address 10.10.0.2  
+netmask 255.255.255.252  
+mode gre  
+local 172.16.5.2  
+endpoint 172.16.4.2  
+ttl 64
+```
+  
 ## CLI
 
 ## Доп_инф
