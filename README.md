@@ -218,7 +218,7 @@ ttl 64
 <details>
 <summary>✍🏻 Как узнать куда какой IP</summary>
 
-1
+2
 
 </details>  
 
