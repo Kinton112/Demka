@@ -90,18 +90,18 @@ address 192.168.100.1
 netmask 255.255.255.192  
   
 auto ens224:1  
-iface ens224 inet static  
+iface ens224:1 inet static  
 address 192.168.200.1  
 netmask 255.255.255.240  
 
 auto ens224.100  
-iface ens224 inet static  
+iface ens224.100 inet static  
 address 192.168.100.3  
 netmask 255.255.255.192  
 Vlan-raw-device ens224  
   
-auto ens224:1.200  
-iface ens224 inet static  
+auto ens224.200  
+iface ens224.200 inet static  
 address 192.168.200.3  
 netmask 255.255.255.240  
 Vlan-raw-device ens224:1
