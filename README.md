@@ -26,8 +26,15 @@ auto ens224
 iface ens224 inet static  
 address 172.16.4.1  
 netmask 255.255.255.240
+```
+или такой вариант  
+```
+auto ens224  
+iface ens224 inet static  
+address 172.16.4.1/28  
 ```  
 Ещё есть строка `gateway айпи` Пишем там где нужен gateway  
+(он обязан быть один во всем конфиге, один и только один)  
   
 Дополнение:
   
