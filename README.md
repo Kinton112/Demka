@@ -67,7 +67,7 @@ iptables-save > /etc/iptables/rules.v4
 <details>
 <summary>✔️ Результат проверки</summary>
 
-Здесь находится ваш текст, который будет скрыт до тех пор, пока пользователь не нажмет на заголовок.
+![Логотип проекта](iptables.png)
 
 </details>  
 
